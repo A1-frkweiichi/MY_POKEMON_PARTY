@@ -1,0 +1,4 @@
+<%= form_tag search_pokemons_path, method: :post, data: { turbo: "false" } do %>
+  <%= text_field_tag :query, nil, placeholder: "ポケモンの名前またはIDを入力" %>
+  <%= submit_tag "検索" %>
+<% end %>
